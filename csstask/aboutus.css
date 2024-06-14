@@ -1,0 +1,77 @@
+body
+{
+ background:url('image2.avif') no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.heading
+{
+    width:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    margin:20px auto;
+}
+.container
+{
+    width:90%;
+    margin:0 auto;
+    padding:10px 20px;
+ }
+.about{
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+     flex-wrap:wrap;
+}
+.aboutimage{
+    flex:1;
+    margin-right:40px;
+    overflow:hidden;
+}
+   .aboutimage img
+   {
+      max-width:100%;
+      height:auto;
+      display:block;
+      }
+.content
+      {
+          flex:1;
+          }
+.content p{
+    font-size:18px; 
+    line-height:1.5; 
+    color:#000; 
+    padding:30px; 
+    text-align:justify;
+}
+.content .readmore
+{
+    display:inline-block;
+    padding:10px 20px;
+    background-color:#213030;
+    color:#fff;
+    font-size:19px;
+    border-radius:25px;
+    margin-top:15px;
+    }
+
+@media screen and (max-width:768px)
+{
+  .heading{
+     padding:0px 20px;
+    }
+   .container{
+        padding:0px;}
+   .about{
+        padding:20px;
+        flex-direction:column;
+        }
+   .content p{
+        padding:0px;
+        font-size:16px;
+        }
+      }

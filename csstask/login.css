@@ -1,0 +1,59 @@
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 72vh;
+    margin:100px;
+    background:url('image2.avif') no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+button {
+    background-color:#213030;
+    width: 80%;
+    color: white;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    border-radius:15px;
+}
+button:hover {
+    background: #918e84;
+}
+ form {
+        border: 5px solid white;
+        border-radius:15px;
+        width: 400px;
+        height: 350px;
+        padding: 10px;
+        margin: 0;
+        background:#ffff;
+}
+input[type=text], input[type=password] {
+        width: 80%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid grey;
+        box-sizing: border-box;
+         border-radius:20px;
+}
+@media screen and (max-width: 768px) {
+      form{
+        height:350px;
+        width:250px;
+       }
+      .container
+        {
+        display:block;
+        float:left;
+
+        }
+        .container .inputbox
+        {
+          margin-bottom:40px;
+          width:100%;
+          }
+ }

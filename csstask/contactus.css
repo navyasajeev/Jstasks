@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    }
+    .contact{
+    position:relative;
+    min-height:100vh;
+    padding:50px 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+     background:url('image2.avif') no-repeat;
+        background-size:cover;
+        background-position:center;
+        }
+    
+    .contact .content
+    {
+        max-width:800px;
+        text-align:center;
+    }
+    .container
+    {
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top:30px;
+        }
+    .container .contactinfo
+    {
+         width:50%;
+         display:flex;
+         flex-direction:column;
+     }
+    .container .contactinfo .box
+    {
+      position:relative;
+      padding:20px 0;
+      display:flex;
+     }
+     .container .contactinfo .box .icon
+    {
+       min-width:60px;
+       height:60px;
+       background:#fff;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       border-radius:50%;
+       font-size:22px;
+       }
+       .container .contactinfo .box .text
+       {
+         display:flex;
+         margin-left:20px;
+         font-size:16px;
+         flex-direction:column;
+         font-weight:300;
+    }
+       .contactform
+       {
+        width:40%;
+        padding:40px;
+        background:#fff;
+       }
+    .contactform .inputbox
+    {
+       position:relative;
+       width:100%;
+       margin-top:10px;
+    
+    }
+    .contactform .inputbox input,
+    .contactform .inputbox textarea
+    {
+       width:100%;
+       padding:5px 0;
+       font-size:16px;
+       margin:10px 0;
+       border:none;
+       border-bottom:2px solid #333;
+       }
+    .inputbox span{
+         display:block;
+         font-weight:700;
+         font-size:14px;
+         color:red;
+         
+    }
+    .inputbox span i{
+        color:seagreen;
+    }
+    
+       @media(max-width:991px)
+       {
+            .contact
+            {
+                padding:50px;
+            }
+            .container
+            {
+            flex-direction:column;
+            }
+            .container .contactinfo,
+            .contactform
+            {
+              margin-bottom:40px;
+              width:100%;
+              }
+              }

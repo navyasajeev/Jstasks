@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="register.css" />
+      <script type="text/javascript" src="register.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>Sign up</header>
+       <form method="POST"  class="form" action="Userlogin.html" onSubmit="return formvalid()">
+
+          <div class="column">
+        <div class="input-box">
+          <label>First name</label>
+          <input type="text"  placeholder="First name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Last name</label>
+          <input type="text"  placeholder="Last name" required />
+        </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Phone number</label>
+            <input type="number" id="phone" placeholder="Phone number" required /><span id="s1"></span>
+          </div>
+          <div class="input-box">
+            <label>Date of birth</label>
+            <input type="date"  placeholder="Birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text"  placeholder="Address line 1" required />
+          <input type="text" placeholder="Address line 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select >
+                <option >State</option>
+                <option>Kerala</option>
+                <option>Tamil nadu</option>
+              </select>
+            </div>
+               <div class="select-box">
+              <select>
+                <option >City</option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>  <div class="column">
+        <div class="input-box">
+          <label>Email address</label>
+          <input type="text" id="email" placeholder="Email address" required /><span id="s2"></span>
+        </div>
+        <div class="input-box">
+          <label>Username</label>
+          <input type="text"  placeholder="Username" required />
+        </div>
+        </div>
+             <div class="column">
+        <div class="input-box">
+          <label>Password</label>
+          <input type="password" id="pass" placeholder="Password" required /><span id="s3"></span>
+        </div>
+        <div class="input-box">
+          <label>Confirm password</label>
+          <input type="password" id="password" placeholder="Confirm password" required /><span id="s4"></span>
+        </div>
+        </div>
+        </div>
+        <button>Register</button>
+        <div  class="loginlink" style="text-align:center;"> <p>Already have an account?
+                <a href="Userlogin.html">login now </a></p>
+            </div>
+      </form>
+
+    </section>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<Html>-->
+<!--<head>-->
+<!--<title>-->
+<!--Registration Page-->
+<!--</title>-->
+<!--     <link rel="stylesheet" href="a.css">-->
+<!--    <style>-->
+
+<!--body{-->
+<!--    display:flex;-->
+<!--    justify-content:center;-->
+<!--    align-items:center;-->
+<!--    min-height:60vh;-->
+<!--    margin:100px;-->
+<!--    background:url('image2.avif') no-repeat;-->
+<!--    background-size:cover;-->
+<!--    background-position:center;-->
+<!--}-->
+
+<!--button {-->
+<!--       background-color:#213030;-->
+<!--       width: 80%;-->
+<!--        color: white;-->
+<!--        padding: 15px;-->
+<!--        margin: 10px 0px;-->
+<!--        border: none;-->
+<!--        cursor: pointer;-->
+<!--         border-radius:15px;-->
+<!--         }-->
+<!--.container{-->
+<!--        border: 5px solid white;-->
+<!--        width: 600px;-->
+<!--        height: 700px;-->
+<!--        padding: 10px;-->
+<!--        margin: 0;-->
+<!--        background:transparent;-->
+<!--        border-radius:5px;-->
+<!--    }-->
+<!--.container form .content{-->
+
+<!--    display:flex;-->
+<!--    flex-wrap:wrap;-->
+<!--   justify-content:space-between;-->
+<!--   margin: 20px 0 12px 0;-->
+<!--}-->
+<!--form .content .input-box{-->
+<!--    margin-bottom:15px;-->
+<!--    width:calc(100 /2 -20px);-->
+<!--}-->
+<!--.content .input-box input,-->
+<!--.content .input-box gendertitle{-->
+<!--    height:45px;-->
+<!--    width:100%;-->
+<!--    outline:none;-->
+<!--    border-radius:5px;-->
+<!--    border:1px solid #ccc;-->
+<!--    padding-left:15px;-->
+<!--    font-size:16px;-->
+
+<!--    }-->
+<!--&lt;!&ndash;input[type=text],input[type=number],input[type=date], input[type=email],input[type=password],textarea, select[name=city], select[name=state],input[type=username]{&ndash;&gt;-->
+<!--&lt;!&ndash;  width: 500px;&ndash;&gt;-->
+<!--&lt;!&ndash;  padding: 15px;&ndash;&gt;-->
+<!--&lt;!&ndash;  margin: 5px 0 22px 0;&ndash;&gt;-->
+<!--&lt;!&ndash;  display: inline-block;&ndash;&gt;-->
+<!--&lt;!&ndash;  border: none;&ndash;&gt;-->
+<!--&lt;!&ndash;  background: #f1f1f1;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+<!-- <div class="container"><center>-->
+<!--    <form action="">-->
+<!--      <h1>Registraion form</h1>-->
+<!--        <div class="content">-->
+<!--            <div class="input-box">-->
+<!--                <label> First name: </label>-->
+<!--                  <input type="text" placeholder="First name" name="firstname" required>-->
+<!--            </div>-->
+
+<!--           <div class="input-box">-->
+<!--               <label> Last name: </label>-->
+<!--                  <input type="text" placeholder="Last name" name="lasttname" required>-->
+<!--            </div>-->
+<!--           <div class="input-box">-->
+<!--               <label> Date of birth:</label>-->
+<!--                  <input type="date" placeholder="Date of birth" name="dateofbirth" required>-->
+<!--            </div>-->
+<!--             <span class="gendertitle">Gender</span>-->
+<!-- <div class="gendercategory">-->
+
+<!--                 <input type="radio" name="gender" id="male">-->
+<!--                <label for="male">Male</label>-->
+<!--                 <input type="radio" name="gender" id="female">-->
+<!--                <label for="female">Female</label>-->
+<!--                 <input type="radio" name="gender" id="other">-->
+<!--                <label for="other"> Other</label>-->
+
+<!--            </div>-->
+
+<!--             <div class="input-box">-->
+<!--               <label> Age: </label>-->
+<!--                  <input type="text" placeholder="Age" name="age" required>-->
+<!--            </div>-->
+<!--            <div class="input-box">-->
+<!--                <label>Phone:</label>-->
+<!--                  <input type="number" placeholder="Number" name="number" required>-->
+<!--            </div>-->
+
+
+<!--           <div class="select-box">-->
+<!--                <label>State:</label>-->
+<!--               <select name="state" id="state">-->
+<!--                   <option value="" selected="selected">State</option>-->
+<!--               </select>-->
+<!--           </div>-->
+<!--           <div class="select-box">-->
+<!--                <label>City:</label>-->
+<!--                <select name="city" id="city">-->
+<!--                     <option value="" selected="selected">City</option>-->
+<!--                </select>-->
+<!--           </div>-->
+<!--         <div class="input-box">-->
+<!--                <label>Email:</label>-->
+<!--                  <input type="email" placeholder="Email" name="email" required>-->
+<!--            </div>-->
+<!--        <div class="input-box">-->
+<!--                <label>User name:</label>-->
+<!--                  <input type="text" placeholder="User name" name="username" required>-->
+<!--            </div>-->
+<!--        <div class="input-box">-->
+<!--                <label>Password:</label>-->
+<!--                  <input type="password" placeholder="Password" name="password" required>-->
+<!--            </div>-->
+<!--        <div class="input-box">-->
+<!--                <label>Confirm password:</label>-->
+<!--                  <input type="password" placeholder="Confirm password" name="confirm password" required>-->
+<!--            </div>-->
+<!--          <button type="submit" class="btn">Register</button>-->
+<!--            <div  class="registerlink"> <p>Already have an account?-->
+<!--                <a href="#">Log in</a></p>-->
+<!--     </div>-->
+
+
+<!--        </div>-->
+<!--     </form>-->
+<!-- </center>-->
+<!-- </div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+<!--<body >-->
+<!--<br>-->
+<!--<br>-->
+<!--<form action="POST">-->
+<!--    <div class="container">-->
+<!--<h1 >Registraion Form</h1>-->
+
+<!--<div class="mb-3">-->
+
+<!--<label> First name: </label>-->
+<!--<input type="text" name="First name" /> <br> <br>-->
+<!--<label> Middle name: </label>-->
+<!--<input type="text" name="middlename"/> <br> <br>-->
+<!--<label> Last name: </label>-->
+<!--<input type="text" name="lastname" /> <br> <br>-->
+<!--<label> Date of birth:</label>-->
+<!--    <input type="date" name="date" /> <br> <br><br>-->
+<!--<label> Age: </label>-->
+<!--<input type="number" name="age" size="3"/> <br> <br><br>-->
+
+
+<!--<label>-->
+<!--Gender :-->
+<!--</label><br>-->
+<!--<input type="radio" name="male"/> Male <br>-->
+<!--<input type="radio" name="female"/> Female <br>-->
+<!--<input type="radio" name="other"/> Other-->
+<!--<br>-->
+<!--<br>-->
+
+<!--<label>-->
+<!--Phone :-->
+<!--</label>-->
+<!--<input type="" name="country code"  value="+91" size="2"/>-->
+<!--<input type="number" name="phone" size="10"/> <br> <br><br>-->
+<!--   <label>-->
+<!--Email :-->
+<!--</label>-->
+<!--<input type="email" id="email" name="email"/> <br>-->
+<!--<br> <br>-->
+<!--<label>Address</label>-->
+<!--<br>-->
+<!--<textarea cols="80" rows="5" value="address">-->
+<!--</textarea>-->
+<!--<br> <br>-->
+
+<!--<label>-->
+<!--State:-->
+<!--</label>-->
+<!--<select>-->
+<!--<option value="state">State</option>-->
+<!--<option value="kerala">Kerala</option>-->
+<!--<option value="karnataka">Karnataka</option>-->
+<!--<option value="tamilnadu">Tamil Nadu</option>-->
+
+<!--</select>-->
+<!--<br><br>-->
+<!--<label>-->
+<!--    City:-->
+<!--</label>-->
+<!--<select name="States" id="states">-->
+<!--    <optgroup label="Kerala">-->
+<!--      <option value="Thiruvanathapuram">Thiruvanathapuram</option>-->
+<!--      <option value="Kollam">Kollam</option>-->
+<!--         <option value="Thiruvanathapuram">Thiruvanathapuram</option>-->
+<!--      <option value="Ernakulam">Ernakulam</option>-->
+<!--         <option value="Pattanamthitta">Pattanamthitta</option>-->
+<!--      <option value="Kottayam">Kottayam</option>-->
+<!--         <option value="Palakad">Palakad</option>-->
+<!--      <option value="Kollam">Kollam</option>-->
+<!--    </optgroup>-->
+<!--    <optgroup label="Karnataka">-->
+<!--      <option value="Hassan">Hassan</option>-->
+<!--      <option value="Haveri">Haveri</option>-->
+<!--        <option value="Mysuru">Mysuru</option>-->
+<!--      <option value="Udupi">Udupi</option>-->
+<!--    </optgroup>-->
+<!--    <optgroup label="Tamil Nadu">-->
+<!--      <option value="Coimbatore">Coimbatore</option>-->
+<!--      <option value="Salem">Salem</option>-->
+<!--        <option value="Theni">Theni</option>-->
+<!--      <option value="Erode">Erode</option>-->
+<!--    </optgroup>-->
+<!--  </select>-->
+<!--    <br><br>-->
+<!--    <label>-->
+<!--    Username:-->
+<!--</label>-->
+
+<!--<input type="username" id="username" name="username"> <br>-->
+<!--<br> <br>-->
+<!--    <label>-->
+<!--   Password:-->
+<!--</label>-->
+
+<!--<input type="Password" id="password" name="password"> <br>-->
+<!--<br> <br>-->
+<!--    <label>-->
+<!--   Confirm password:-->
+<!--</label>-->
+
+<!--<input type="Password" id="confirmpassword" name="confirmpassword"> <br> <br>-->
+<!--<center><input type="button" value="Submit" style=" width:100px; background-color:lightgreen;"/></center>-->
+<!--</div>-->
+<!--    </div>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
